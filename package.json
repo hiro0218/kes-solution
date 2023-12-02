@@ -8,7 +8,9 @@
     "preview": "minista preview"
   },
   "prettier": {
-    "semi": true
+    "semi": true,
+    "printWidth": 120,
+    "singleQuote": true
   },
   "devDependencies": {
     "@types/react": "^18.2.40",
