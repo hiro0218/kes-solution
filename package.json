@@ -8,7 +8,7 @@
     "preview": "minista preview"
   },
   "prettier": {
-    "semi": false
+    "semi": true
   },
   "devDependencies": {
     "@types/react": "^18.2.40",
