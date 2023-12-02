@@ -1,0 +1,21 @@
+{
+  "name": "kes-solution",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "minista",
+    "build": "minista build",
+    "preview": "minista preview"
+  },
+  "prettier": {
+    "semi": false
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.40",
+    "@types/react-dom": "^18.2.17",
+    "minista": "^3.1.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.1.6"
+  }
+}
