@@ -1,4 +1,6 @@
-import { Head } from "minista"
+import { Head } from 'minista';
+
+import About from '../components/about';
 
 export default function () {
   return (
@@ -14,6 +16,7 @@ export default function () {
         <meta name="theme-color" content="#ffffff" />
       </Head>
       <h1>Hello!</h1>
+      <About />
     </>
-  )
+  );
 }
