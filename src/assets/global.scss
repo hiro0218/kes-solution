@@ -1,0 +1,26 @@
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.875;
+  -webkit-font-smoothing: subpixel-antialiased;
+
+  /* stylelint-disable */
+  @media only screen and (min-device-pixel-ratio: 2), (resolution >= 2dppx) {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  /* stylelint-enable */
+
+  @media screen and (max-width: 767px) {
+    // PC: 16px相当、SP: 18px相当
+    font-size: 112.5%;
+  }
+}
+
+a {
+  color: #da532c;
+  text-underline-offset: 0.25em;
+}
+
+main {
+  margin-top: 2rem;
+}

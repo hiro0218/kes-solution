@@ -2,7 +2,7 @@ import type { GlobalProps } from 'minista';
 import { Head } from 'minista';
 
 import 'shokika.css';
-import '../../assets/style.css';
+import '../assets/global.scss';
 
 export default function ({ url, title, children }: GlobalProps) {
   return (

@@ -1,0 +1,68 @@
+.businessList {
+  display: flex;
+  gap: 1rem;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+}
+
+.businessItem {
+  width: calc(100% / 3);
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+
+    & + & {
+      margin-top: 1.5rem;
+    }
+  }
+
+  p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+.businessIcon {
+  display: flex;
+  justify-content: center;
+
+  svg {
+    fill: #666;
+
+    @media screen and (max-width: 767px) {
+      width: 80px;
+    }
+  }
+}
+
+.businessHeading {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.businessTechHeading {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.businessTechSubHeading {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.businessTechInlineList {
+  display: inline-flex;
+
+  li:not(:last-child) {
+    &::after {
+      margin-right: 0.5em;
+      content: ',';
+    }
+  }
+}

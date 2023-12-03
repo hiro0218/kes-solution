@@ -1,7 +1,10 @@
 import { Head } from 'minista';
 
+import TheHeader from '../components/TheHeader';
+import TheFooter from '../components/TheFooter';
 import CompanyOverview from '../components/CompanyOverview';
 import BusinessOverview from '../components/BusinessOverview';
+import Splash from '../components/Splash?ph';
 
 export default function () {
   return (
@@ -9,18 +12,13 @@ export default function () {
       <Head>
         <title>株式会社KESソリューション</title>
       </Head>
-      <header>
-        <h1>
-          <img src="/logo.svg" alt="株式会社KESソリューション" />
-        </h1>
-      </header>
-      <CompanyOverview />
-      <BusinessOverview />
-      <footer>
-        <p>
-          <small>&copy; 株式会社KESソリューション</small>
-        </p>
-      </footer>
+      <Splash />
+      <TheHeader />
+      <main>
+        <CompanyOverview />
+        <BusinessOverview />
+      </main>
+      <TheFooter />
     </>
   );
 }
