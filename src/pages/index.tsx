@@ -10,7 +10,9 @@ export default function () {
         <title>株式会社KESソリューション</title>
       </Head>
       <header>
-        <h1>株式会社KESソリューション</h1>
+        <h1>
+          <img src="/logo.svg" alt="株式会社KESソリューション" />
+        </h1>
       </header>
       <CompanyOverview />
       <BusinessOverview />
