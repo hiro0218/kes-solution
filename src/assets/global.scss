@@ -1,6 +1,9 @@
+@import 'open-color/open-color.scss';
+
 body {
   font-family: 'Noto Sans JP', sans-serif;
   line-height: 1.875;
+  color: $oc-gray-9;
   -webkit-font-smoothing: subpixel-antialiased;
 
   /* stylelint-disable */

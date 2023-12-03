@@ -26,6 +26,7 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
+    "open-color": "^1.9.1",
     "shokika.css": "^1.7.1"
   }
 }

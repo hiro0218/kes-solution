@@ -16,6 +16,12 @@ export default function ({ url, title, children }: GlobalProps) {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#da532c" />
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="theme-color" content="#ffffff" />
+        <meta property="og:title" content="株式会社KESソリューション" />
+        <meta property="og:site_name" content="株式会社KESソリューション" />
+        <meta property="og:url" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link

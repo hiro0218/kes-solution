@@ -1,3 +1,5 @@
+@import 'open-color/open-color.scss';
+
 .businessList {
   display: flex;
   gap: 1rem;
@@ -21,6 +23,7 @@
   p {
     margin-top: 0.5rem;
     font-size: 1rem;
+    color: $oc-gray-8;
   }
 }
 
@@ -29,7 +32,7 @@
   justify-content: center;
 
   svg {
-    fill: #666;
+    fill: $oc-gray-6;
 
     @media screen and (max-width: 767px) {
       width: 80px;
