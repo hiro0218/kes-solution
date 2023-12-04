@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "minista",
     "build": "minista build",
-    "preview": "minista preview"
+    "preview": "minista preview",
+    "build:gp": "GITHUB_PAGES=true minista build"
   },
   "prettier": {
     "semi": true,
