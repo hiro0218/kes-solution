@@ -11,6 +11,7 @@ export default function () {
     <>
       <Head>
         <title>株式会社KESソリューション</title>
+        {process.env.GITHUB_PAGES === 'true' && <base href="https://hiro0218.github.io/kes-solution/" />}
       </Head>
       <Splash />
       <TheHeader />
