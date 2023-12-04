@@ -40,7 +40,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build next.js app
+      - name: Build App
         env:
           GITHUB_PAGES: true
         run: |
