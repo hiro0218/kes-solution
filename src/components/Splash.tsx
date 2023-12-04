@@ -12,7 +12,7 @@ export default function () {
 
   return (
     <div ref={ref} className={splash.container}>
-      <img src="/logo.svg" alt="株式会社KESソリューション" height="" width="280" />
+      <img src="logo.svg" alt="株式会社KESソリューション" height="" width="280" />
     </div>
   );
 }

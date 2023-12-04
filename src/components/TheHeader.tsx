@@ -5,7 +5,7 @@ export default function () {
     <header className={header.container}>
       <h1 className={header.logo}>
         <a href="/">
-          <img src="/logo.svg" alt="株式会社KESソリューション" width="80" />
+          <img src="logo.svg" alt="株式会社KESソリューション" width="80" />
         </a>
       </h1>
       <nav className={header.navigation}>
