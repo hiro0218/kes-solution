@@ -1,6 +1,6 @@
 import { Head } from 'minista';
 
-import TheHeader from '../components/App/TheHeader';
+import TheHeader from '../components/App/TheHeader?ph';
 import TheFooter from '../components/App/TheFooter';
 import Philosophy from '../components/Philosophy';
 import CompanyOverview from '../components/CompanyOverview';
