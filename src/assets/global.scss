@@ -5,6 +5,7 @@ body {
   line-height: 1.875;
   color: $oc-gray-9;
   -webkit-font-smoothing: subpixel-antialiased;
+  padding-top: 6rem; // header height
 
   /* stylelint-disable */
   @media only screen and (min-device-pixel-ratio: 2), (resolution >= 2dppx) {

@@ -2,6 +2,7 @@ import { Head } from 'minista';
 
 import TheHeader from '../components/TheHeader';
 import TheFooter from '../components/TheFooter';
+import Philosophy from '../components/Philosophy';
 import CompanyOverview from '../components/CompanyOverview';
 import BusinessOverview from '../components/BusinessOverview';
 import Splash from '../components/Splash?ph';
@@ -34,6 +35,7 @@ export default function () {
       <Splash />
       <TheHeader />
       <main>
+        <Philosophy />
         <CompanyOverview />
         <BusinessOverview />
       </main>

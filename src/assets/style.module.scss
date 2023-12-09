@@ -1,10 +1,6 @@
 .container {
   padding: 10rem 4rem;
 
-  &:first-of-type {
-    padding-top: 6rem; // header height
-  }
-
   @media screen and (max-width: 767px) {
     padding: 5rem 1rem;
   }

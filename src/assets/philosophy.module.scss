@@ -1,0 +1,27 @@
+.container {
+  text-align: center;
+}
+
+.phrase {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  font-size: 1.8rem;
+}
+
+.companyPolicyContainer {
+  margin-top: 2.5rem;
+}
+
+.companyPolicyHeading {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.companyPolicyParagraph {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+
+  & + & {
+    margin-top: 0.5rem;
+  }
+}
