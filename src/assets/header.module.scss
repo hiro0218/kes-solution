@@ -1,12 +1,19 @@
 .container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 5rem;
-  padding: 1rem 64px;
+  height: 6rem;
+  padding: 0 64px;
+  background-color: #fff;
+  border-bottom: 1px solid #ececec;
+  z-index: 1;
 
   @media screen and (max-width: 767px) {
-    padding: 1rem 16px;
+    padding: 0 16px;
   }
 }
 
@@ -37,6 +44,7 @@
     align-items: center;
     height: 100%;
     padding: 0.75rem 1rem;
+    font-weight: 700;
     text-decoration: none;
 
     &::before {
@@ -44,7 +52,7 @@
       bottom: 0;
       width: 0;
       content: '';
-      border-bottom: 2px solid currentcolor;
+      border-bottom: 4px solid currentcolor;
       transition: width 0.2s ease;
     }
 

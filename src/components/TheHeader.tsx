@@ -11,6 +11,9 @@ export default function () {
       <nav className={header.navigation}>
         <ul>
           <li>
+            <a href="#philosophy">経営理念</a>
+          </li>
+          <li>
             <a href="#company-overview">会社概要</a>
           </li>
           <li>
