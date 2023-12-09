@@ -1,5 +1,5 @@
-import style from '../assets/style.module.scss';
-import footerStyle from '../assets/footer.module.scss';
+import style from '../../assets/style.module.scss';
+import footerStyle from '../../assets/footer.module.scss';
 
 export default function () {
   return (

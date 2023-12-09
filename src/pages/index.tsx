@@ -5,7 +5,7 @@ import TheFooter from '../components/App/TheFooter';
 import Philosophy from '../components/Philosophy';
 import CompanyOverview from '../components/CompanyOverview';
 import BusinessOverview from '../components/BusinessOverview';
-import Splash from '../components/Splash?ph';
+import Splash from '../components/App/Splash?ph';
 
 export default function () {
   return (

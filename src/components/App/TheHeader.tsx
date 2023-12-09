@@ -1,4 +1,4 @@
-import header from '../assets/header.module.scss';
+import header from '../../assets/header.module.scss';
 
 export default function () {
   return (
