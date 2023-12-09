@@ -2,19 +2,24 @@ import { MouseEventHandler, useEffect, useRef } from 'react';
 import header from '../../assets/header.module.scss';
 
 export default function () {
+  const refs = useRef<Map<string, HTMLAnchorElement>>(new Map());
+
   const onClickAnchor = (e: React.MouseEvent<HTMLElement>) => {
     e.preventDefault();
 
-    const target = (e.target as HTMLAnchorElement).getAttribute('href');
-    const element = document.querySelector(target);
+    const href = (e.target as HTMLAnchorElement).getAttribute('href');
 
-    if (!element) {
-      return;
+    if (!refs.current.has(href)) {
+      const element = document.querySelector<HTMLAnchorElement>(href);
+      if (!element) return;
+      refs.current.set(href, element);
     }
 
+    const element = refs.current.get(href);
     const rect = element.getBoundingClientRect();
     const offset = window.scrollY;
-    const targetY = rect.top + offset;
+    const padding = 20;
+    const targetY = rect.top + offset - padding;
 
     window.scrollTo({
       top: targetY,
