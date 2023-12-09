@@ -30,7 +30,7 @@ export default function () {
   return (
     <header className={header.container}>
       <h1 className={header.logo}>
-        <a href="/">
+        <a href="./">
           <img src="logo.svg" alt="株式会社KESソリューション" width="80" />
         </a>
       </h1>
