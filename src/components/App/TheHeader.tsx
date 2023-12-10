@@ -1,8 +1,9 @@
-import { MouseEventHandler, useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import header from '../../assets/header.module.scss';
 
 export default function () {
   const refs = useRef<Map<string, HTMLAnchorElement>>(new Map());
+  const refHamburger = useRef<HTMLButtonElement>(null);
 
   const onClickAnchor = (e: React.MouseEvent<HTMLElement>) => {
     e.preventDefault();
@@ -27,6 +28,11 @@ export default function () {
     });
   };
 
+  const toggleExpanded = () => {
+    if (!refHamburger.current) return;
+    refHamburger.current.dataset.expanded = refHamburger.current.dataset.expanded === 'true' ? 'false' : 'true';
+  };
+
   return (
     <header className={header.container}>
       <h1 className={header.logo}>
@@ -34,6 +40,20 @@ export default function () {
           <img src="logo.svg" alt="株式会社KESソリューション" width="80" />
         </a>
       </h1>
+      <button
+        type="button"
+        aria-label="hamburger button"
+        ref={refHamburger}
+        className={header.hamburger}
+        data-expanded="false"
+        onClick={toggleExpanded}
+      >
+        <div className={header.hamburgerButton}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
       <nav className={header.navigation}>
         <ul>
           <li>
