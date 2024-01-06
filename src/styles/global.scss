@@ -1,9 +1,9 @@
-@import 'open-color/open-color.scss';
+@import '@radix-ui/colors/gray.css';
 
 body {
   font-family: 'Noto Sans JP', sans-serif;
   line-height: 1.875;
-  color: $oc-gray-9;
+  color: var(--gray-11);
   -webkit-font-smoothing: subpixel-antialiased;
   padding-top: 6rem; // header height
 
@@ -12,7 +12,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-
   /* stylelint-enable */
 
   @media screen and (max-width: 767px) {
