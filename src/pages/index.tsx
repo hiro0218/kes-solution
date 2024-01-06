@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { BusinessOverview } from '@/components/Home/BusinessOverview';
 import { CompanyOverview } from '@/components/Home/CompanyOverview';
 import { Philosophy } from '@/components/Home/Philosophy';
+import { MainContainer } from '@/components/Layout';
 
 export default function Home() {
   return (
@@ -10,11 +11,11 @@ export default function Home() {
       <Head>
         <title>株式会社KESソリューション</title>
       </Head>
-      <main>
+      <MainContainer>
         <Philosophy />
         <BusinessOverview />
         <CompanyOverview />
-      </main>
+      </MainContainer>
     </>
   );
 }

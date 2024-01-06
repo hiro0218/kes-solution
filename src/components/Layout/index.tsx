@@ -1,5 +1,15 @@
 import styled from '@emotion/styled';
 
+export const MainContainer = styled.main`
+  margin: 10rem auto 4.5rem;
+  max-width: 1120px;
+
+  @media screen and (max-width: 767px) {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+`;
+
 export const Section = styled.section`
   padding: 10rem 4rem;
 
@@ -8,6 +18,6 @@ export const Section = styled.section`
   }
 
   & + & {
-    margin-top: 40px;
+    margin-top: 2.5rem;
   }
 `;

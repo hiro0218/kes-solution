@@ -1,3 +1,4 @@
+import { MainContainer } from '@/components/Layout';
 import Head from 'next/head';
 
 export default function Security() {
@@ -6,7 +7,7 @@ export default function Security() {
       <Head>
         <title>株式会社KESソリューション - 情報セキュリティ基本方針</title>
       </Head>
-      <main>
+      <MainContainer>
         <h2>情報セキュリティ基本方針</h2>
         <section>
           <p>
@@ -49,7 +50,7 @@ export default function Security() {
             <li>12.【見直し】 情報セキュリティ基本方針は、マネジメントレビュー時に見直すこととする。</li>
           </ol>
         </section>
-      </main>
+      </MainContainer>
     </>
   );
 }
