@@ -1,25 +1,20 @@
-import { useEffect, useRef } from "react";
-import styled from "@emotion/styled";
-import { keyframes } from "@emotion/react";
+import { useEffect, useRef } from 'react';
+import styled from '@emotion/styled';
+import { keyframes } from '@emotion/react';
 
 export const Splash = () => {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setTimeout(() => {
-      ref.current?.classList.add("fade-out");
+      ref.current?.classList.add('fade-out');
     }, 500);
   }, []);
 
   return (
     <Container ref={ref}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src="logo.svg"
-        alt="株式会社KESソリューション"
-        height=""
-        width="280"
-      />
+      <img src="logo.svg" alt="株式会社KESソリューション" height="" width="280" />
     </Container>
   );
 };
