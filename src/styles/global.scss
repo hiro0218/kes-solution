@@ -8,10 +8,11 @@ body {
   padding-top: 6rem; // header height
 
   /* stylelint-disable */
-  @media only screen and (min-device-pixel-ratio: 2), (resolution >= 2dppx) {
+  @media only screen and (min-device-pixel-ratio: 2), (resolution >=2dppx) {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
   /* stylelint-enable */
 
   @media screen and (max-width: 767px) {
