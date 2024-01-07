@@ -22,7 +22,7 @@ export const Header = () => {
       // index.tsx以外の場合はrouter.pushを実行する
       if (location.pathname !== '/') {
         await new Promise((resolve) => {
-          resolve(router.push(`/#${hash}`));
+          resolve(router.push('/'));
         });
       }
 
