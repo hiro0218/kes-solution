@@ -15,7 +15,7 @@ export const Footer = () => {
       </TermLinkList>
       <CompanyInfo>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="logo.svg" alt="株式会社KESソリューション" width="60" />
+        <img src="/logo.svg" alt="株式会社KESソリューション" width="60" />
         <p>
           <small>&copy; 株式会社KESソリューション</small>
         </p>
