@@ -44,7 +44,7 @@ export const Header = () => {
   return (
     <Root>
       <Logo>
-        <Link href="./">
+        <Link href="/">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="logo.svg" alt="株式会社KESソリューション" width="80" />
         </Link>
@@ -65,17 +65,17 @@ export const Header = () => {
       <Navigation>
         <ul>
           <li>
-            <Link href="./#philosophy" onClick={onClickAnchor}>
+            <Link href="/#philosophy" onClick={onClickAnchor}>
               経営理念
             </Link>
           </li>
           <li>
-            <Link href="./#business-overview" onClick={onClickAnchor}>
+            <Link href="/#business-overview" onClick={onClickAnchor}>
               事業概要
             </Link>
           </li>
           <li>
-            <Link href="./#company-overview" onClick={onClickAnchor}>
+            <Link href="/#company-overview" onClick={onClickAnchor}>
               会社概要
             </Link>
           </li>
