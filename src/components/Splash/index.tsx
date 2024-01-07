@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import styled from '@emotion/styled';
 import { keyframes } from '@emotion/react';
+import LogoSVG from '@/assets/logo.svg';
 
 export const Splash = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -14,8 +15,7 @@ export const Splash = () => {
 
   return (
     <Container ref={ref}>
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src="/logo.svg" alt="株式会社KESソリューション" height="" width="280" />
+      <LogoSVG alt="株式会社KESソリューション" height="" width="280" />
     </Container>
   );
 };

@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { gray } from '@radix-ui/colors';
+import LogoSVG from '@/assets/logo.svg';
 
 export const Header = () => {
   const refHeader = useRef<HTMLElement>(null);
@@ -59,8 +60,7 @@ export const Header = () => {
     <Root ref={refHeader}>
       <Logo>
         <Link href="/">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo.svg" alt="株式会社KESソリューション" width="80" />
+          <LogoSVG alt="株式会社KESソリューション" width="80" />
         </Link>
       </Logo>
       <Hamburger

@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import Link from 'next/link';
+import LogoSVG from '@/assets/logo.svg';
 
 import { gray } from '@radix-ui/colors';
 
@@ -14,8 +15,7 @@ export const Footer = () => {
         </ul>
       </TermLinkList>
       <CompanyInfo>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/logo.svg" alt="株式会社KESソリューション" width="60" />
+        <LogoSVG alt="株式会社KESソリューション" width="60" />
         <p>
           <small>&copy; 株式会社KESソリューション</small>
         </p>
