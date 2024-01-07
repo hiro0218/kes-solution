@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   output: 'export',
   basePath: !!process.env.GITHUB_ACTIONS ? '/kes-solution' : '',
-  trailingSlash: false,
+  trailingSlash: true,
   compiler: {
     emotion: true,
   },
