@@ -1,10 +1,13 @@
 import { Section } from '@/components/Layout';
 import styled from '@emotion/styled';
+import { Heading } from './Heading';
+
+import { gray } from '@radix-ui/colors';
 
 export const CompanyOverview = () => {
   return (
     <Section id="company-overview">
-      <h2>会社概要</h2>
+      <Heading>会社概要</Heading>
       <TableSection>
         <table>
           <tbody>
@@ -20,10 +23,19 @@ export const CompanyOverview = () => {
                 〒880-0055
                 <br />
                 宮崎県宮崎市南花ケ島315番地5号
-                <br />
-                <a href="https://maps.app.goo.gl/4zJd2Mu8oKsWSJW87" target="_blank">
-                  地図はこちら（Google マップ）
-                </a>
+                <Map>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d846.4167130476571!2d131.42758282957143!3d31.94280106184309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3538b0ba738e59cd%3A0x54236f4915caae9d!2z5qCq5byP5Lya56S-77yr77yl77yz44K944Oq44Ol44O844K344On44Oz!5e0!3m2!1sja!2sjp!4v1704633339961!5m2!1sja!2sjp"
+                    width="100%"
+                    height="450"
+                    allowFullScreen={undefined}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                  <a href="https://maps.app.goo.gl/4zJd2Mu8oKsWSJW87" target="_blank">
+                    地図はこちら（Google マップ）
+                  </a>
+                </Map>
               </td>
             </tr>
             <tr>
@@ -75,6 +87,8 @@ export const CompanyOverview = () => {
 };
 
 const TableSection = styled.div`
+  margin-top: 1rem;
+
   table {
     width: 100%;
     max-width: 100%;
@@ -85,16 +99,29 @@ const TableSection = styled.div`
       font-weight: 400;
     }
 
+    tr + tr {
+      border-top: 1px solid ${gray.gray6};
+    }
+
     th {
       width: 30%;
-      padding: 1rem;
+      padding: 1.5rem 1rem;
       text-align: left;
       vertical-align: top;
     }
 
     td {
-      padding: 1rem;
+      padding: 1.5rem 1rem;
       text-align: left;
     }
+  }
+`;
+
+const Map = styled.div`
+  margin: 1rem 0 0.5rem;
+
+  iframe {
+    display: block;
+    width: 100%;
   }
 `;
