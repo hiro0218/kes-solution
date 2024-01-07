@@ -67,11 +67,11 @@ export const BusinessOverview = () => {
 };
 
 const BusinessContainer = styled.div`
-  margin-top: 1rem;
   display: grid;
+  grid-template-rows: subgrid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 1.5rem;
-  grid-template-rows: subgrid;
+  margin-top: 1rem;
 
   @media screen and (max-width: 767px) {
     display: block;
@@ -80,11 +80,12 @@ const BusinessContainer = styled.div`
 
 const BusinessCard = styled.div`
   display: grid;
-  grid-row: span 3;
   grid-template-rows: subgrid;
+  grid-row: span 3;
 
   @media screen and (max-width: 767px) {
     display: block;
+
     & + & {
       margin-top: 1rem;
     }
@@ -101,11 +102,11 @@ const BusinessCard = styled.div`
 `;
 
 const BusinessCardHeading = styled.h3`
-  font-weight: 700;
+  margin-top: 1rem;
   font-size: 1.2rem;
+  font-weight: 700;
   line-height: 1.2;
   text-align: center;
-  margin-top: 1rem;
 `;
 
 const UseTechnology = styled.div`
@@ -130,10 +131,10 @@ const UseTechnology = styled.div`
   }
 
   li {
-    background-color: #eee;
-    line-height: 1.25;
-    border-radius: 0.25em;
     padding: 0.25em 0.5em;
+    line-height: 1.25;
+    background-color: #eee;
+    border-radius: 0.25em;
 
     & + li {
       margin-left: 0.5rem;

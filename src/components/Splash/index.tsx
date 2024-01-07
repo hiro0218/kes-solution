@@ -39,8 +39,8 @@ const Container = styled.div`
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background-color: #fff;
   user-select: none;
+  background-color: #fff;
 
   &.fade-out {
     animation: ${fadeout} 1s ease-in-out forwards;

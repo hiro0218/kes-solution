@@ -89,15 +89,15 @@ const Root = styled.header`
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   height: 6rem;
   padding: 0 64px;
   background-color: #fff;
   border-bottom: 1px solid #ececec;
-  z-index: 1;
 
   @media screen and (max-width: 767px) {
     padding: 0 16px;
@@ -123,11 +123,11 @@ const Navigation = styled.nav`
     display: none;
 
     [data-expanded='true'] + & {
-      display: block;
       position: absolute;
       top: 100%;
-      left: 0;
       right: 0;
+      left: 0;
+      display: block;
 
       ul {
         flex-direction: column;
@@ -160,25 +160,23 @@ const Navigation = styled.nav`
     height: 100%;
     padding: 0.75rem 1rem;
     font-weight: 700;
-    text-decoration: none;
     color: #333;
+    text-decoration: none;
     transition: color 0.2s ease;
 
     &::before {
       position: absolute;
       bottom: 0;
+      left: 0;
       width: 0;
       content: '';
       border-bottom: 4px solid #da532c;
       transition: width 0.2s ease;
     }
 
-    &::before {
-      left: 0%;
-    }
-
     &:hover {
       color: #da532c;
+
       &::before {
         width: 100%;
       }
@@ -187,9 +185,9 @@ const Navigation = styled.nav`
 `;
 
 const Hamburger = styled.button`
-  border: none;
-  background: none;
   padding: 0;
+  background: none;
+  border: none;
 
   @media screen and not (max-width: 767px) {
     display: none;
@@ -197,21 +195,21 @@ const Hamburger = styled.button`
 
   .hamburgerButton {
     position: relative;
-    background: #da532c;
-    cursor: pointer;
     width: 50px;
     height: 50px;
+    cursor: pointer;
+    background: #da532c;
     border-radius: 5px;
 
     span {
-      display: inline-block;
-      transition: all 0.4s;
       position: absolute;
       left: 14px;
-      height: 3px;
-      border-radius: 2px;
-      background: #fff;
+      display: inline-block;
       width: 45%;
+      height: 3px;
+      background: #fff;
+      border-radius: 2px;
+      transition: all 0.4s;
 
       &:nth-of-type(1) {
         top: 15px;
@@ -231,8 +229,8 @@ const Hamburger = styled.button`
     .hamburgerButton span:nth-of-type(1) {
       top: 18px;
       left: 18px;
-      transform: translateY(6px) rotate(-45deg);
       width: 30%;
+      transform: translateY(6px) rotate(-45deg);
     }
 
     .hamburgerButton span:nth-of-type(2) {
@@ -242,8 +240,8 @@ const Hamburger = styled.button`
     .hamburgerButton span:nth-of-type(3) {
       top: 30px;
       left: 18px;
-      transform: translateY(-6px) rotate(45deg);
       width: 30%;
+      transform: translateY(-6px) rotate(45deg);
     }
   }
 `;

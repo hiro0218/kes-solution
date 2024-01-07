@@ -1,12 +1,12 @@
 import styled from '@emotion/styled';
 
 export const MainContainer = styled.main`
-  margin: 0 auto 4.5rem;
   max-width: 1120px;
+  margin: 0 auto 4.5rem;
 
   @media screen and (max-width: 767px) {
-    margin-left: 1rem;
     margin-right: 1rem;
+    margin-left: 1rem;
   }
 `;
 

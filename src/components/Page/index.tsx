@@ -6,8 +6,8 @@ export const PageHeading = styled.h2`
 `;
 
 export const LeadParagraph = styled.p`
-  letter-spacing: 0.04em;
   line-height: 2;
+  letter-spacing: 0.04em;
 
   & + & {
     margin-top: 1em;
