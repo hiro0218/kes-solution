@@ -22,7 +22,7 @@ export const CompanyOverview = () => {
                 宮崎県宮崎市南花ケ島315番地5号
                 <br />
                 <a href="https://maps.app.goo.gl/4zJd2Mu8oKsWSJW87" target="_blank">
-                  地図はこちら
+                  地図はこちら（Google マップ）
                 </a>
               </td>
             </tr>
