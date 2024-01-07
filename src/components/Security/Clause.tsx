@@ -9,8 +9,12 @@ const List = styled.ol`
 `;
 
 const Item = styled.li`
-  padding-left: 1.5em;
-  text-indent: -1.5em;
+  padding-left: 3ch;
+  text-indent: -3ch;
+
+  &::marker {
+    font-weight: 700;
+  }
 
   & + & {
     margin-top: 0.5em;
