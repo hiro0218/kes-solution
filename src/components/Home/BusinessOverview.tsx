@@ -10,7 +10,7 @@ export const BusinessOverview = () => {
         <BusinessCard>
           <figure>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="business-1.svg" width="240" height="180" alt="" />
+            <img src="/business-1.svg" width="240" height="180" alt="" />
           </figure>
           <BusinessCardHeading>コンサルティング</BusinessCardHeading>
           <p>
@@ -22,7 +22,7 @@ export const BusinessOverview = () => {
         <BusinessCard>
           <figure>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="business-2.svg" width="240" height="180" alt="" />
+            <img src="/business-2.svg" width="240" height="180" alt="" />
           </figure>
           <BusinessCardHeading>技術支援、ソフトウェア開発</BusinessCardHeading>
           <p>
@@ -34,7 +34,7 @@ export const BusinessOverview = () => {
         <BusinessCard>
           <figure>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="business-3.svg" width="240" height="180" alt="" />
+            <img src="/business-3.svg" width="240" height="180" alt="" />
           </figure>
           <BusinessCardHeading>ネットワーク構築、サーバ設定</BusinessCardHeading>
           <p>
