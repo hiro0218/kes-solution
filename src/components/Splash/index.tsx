@@ -8,13 +8,14 @@ export const Splash = () => {
   useEffect(() => {
     setTimeout(() => {
       ref.current?.classList.add('fade-out');
+      ref.current?.setAttribute('aria-hidden', 'true');
     }, 500);
   }, []);
 
   return (
     <Container ref={ref}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src="logo.svg" alt="株式会社KESソリューション" height="" width="280" />
+      <img src="/logo.svg" alt="株式会社KESソリューション" height="" width="280" />
     </Container>
   );
 };
@@ -33,7 +34,7 @@ const fadeout = keyframes`
 const Container = styled.div`
   position: fixed;
   inset: 0;
-  z-index: 2;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: center;
