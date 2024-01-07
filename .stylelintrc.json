@@ -3,5 +3,11 @@
   "rules": {
     "selector-class-pattern": null,
     "media-feature-range-notation": null
-  }
+  },
+  "overrides": [
+    {
+      "files": ["**/*.{ts,jsx,tsx}"],
+      "customSyntax": "postcss-styled-syntax"
+    }
+  ]
 }
