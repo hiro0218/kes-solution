@@ -18,7 +18,7 @@
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@radix-ui/colors": "^3.0.0",
-    "next": "14.0.4",
+    "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18",
     "shokika.css": "^1.7.1"
@@ -29,7 +29,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.0.4",
+    "eslint-config-next": "14.1.0",
     "postcss-styled-syntax": "^0.6.4",
     "sass": "^1.69.7",
     "stylelint": "^16.1.0",
