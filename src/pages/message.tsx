@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import { MainContainer } from '@/components/Layout';
 import { PageHeading, PageSection, PageParagraph, Signature } from '@/components/Page';
+import SignaturePresident from '@/assets/signature-president.png';
 
 export default function Message() {
   return (
@@ -28,7 +28,8 @@ export default function Message() {
           <PageParagraph>今後とも株式会社KESソリューションをどうぞよろしくお願い申し上げます。</PageParagraph>
           <Signature>
             代表取締役　菊地 信<br />
-            <Image src="/signature-president.png" alt="" height="20" />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={SignaturePresident.src} alt="" height="20" />
           </Signature>
         </PageSection>
       </MainContainer>
