@@ -10,12 +10,18 @@ export const Footer = () => {
       <TermLinkList>
         <ul>
           <li>
+            <Link href="/">トップ</Link>
+          </li>
+          <li>
+            <Link href="/message">代表挨拶</Link>
+          </li>
+          <li>
             <Link href="/security">情報セキュリティ基本方針</Link>
           </li>
         </ul>
       </TermLinkList>
       <CompanyInfo>
-        <LogoSVG alt="株式会社KESソリューション" width="60" />
+        <LogoSVG width="60" />
         <p>
           <small>&copy; 株式会社KESソリューション</small>
         </p>
@@ -28,14 +34,21 @@ const Container = styled.footer`
   padding: 64px;
   margin-top: 2rem;
   text-align: center;
-  background-color: ${gray.gray2};
+  background-color: ${gray.gray11};
+  color: ${gray.gray2};
 
   a {
     font-size: 0.9rem;
+    color: ${gray.gray2};
+  }
+
+  svg path {
+    fill: ${gray.gray2};
   }
 
   small {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    color: ${gray.gray7};
   }
 `;
 
@@ -44,11 +57,11 @@ const TermLinkList = styled.nav`
   font-weight: 700;
   text-align: left;
 
-  a {
-    text-decoration: none;
+  ul {
+    display: flex;
 
-    &:hover {
-      text-decoration: underline;
+    > * + * {
+      margin-left: 2rem;
     }
   }
 `;
@@ -58,4 +71,5 @@ const CompanyInfo = styled.div`
   align-items: center;
   justify-content: space-between;
   padding-top: 2.5rem;
+  font-size: 0.85rem;
 `;

@@ -127,6 +127,10 @@ const Logo = styled.h1`
   a {
     display: flex;
     height: 100%;
+
+    &::before {
+      content: none;
+    }
   }
 `;
 

@@ -1,5 +1,7 @@
 import styled from '@emotion/styled';
 
+export { Signature } from './message';
+
 export const PageHeading = styled.h2`
   padding: 2rem 0;
   font-weight: 900;
@@ -19,5 +21,14 @@ export const PageSection = styled.section`
 
   @media screen and (max-width: 767px) {
     padding: 0 16px;
+  }
+`;
+
+export const PageParagraph = styled.p`
+  line-height: 2;
+  letter-spacing: 0.04em;
+
+  & + & {
+    margin-top: 1em;
   }
 `;

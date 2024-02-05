@@ -1,10 +1,16 @@
 @import '@radix-ui/colors/gray.css';
 
+$brand-color: #da532c;
+
+::selection {
+  background-color: rgba($brand-color, 0.2);
+}
+
 body {
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 400;
   line-height: 1.875;
-  color: var(--gray-11);
+  color: var(--gray-12);
   -webkit-font-smoothing: subpixel-antialiased;
   padding-top: 6rem; // header height
 
@@ -22,17 +28,37 @@ body {
 }
 
 a {
-  color: #da532c;
-  text-underline-offset: 0.25em;
+  color: $brand-color;
+  text-decoration: none;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    bottom: -0.25em;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    transform: scale(0);
+    transform-origin: right top;
+    transition: transform 0.3s;
+  }
+
+  &:hover::before {
+    transform-origin: left top;
+    transform: scale(1);
+  }
 }
 
 h1,
-h2 {
+h2,
+h3 {
   color: var(--gray-12);
   font-weight: 900;
+  letter-spacing: 0.08em;
 }
 
-h3,
 h4,
 h5,
 h6 {

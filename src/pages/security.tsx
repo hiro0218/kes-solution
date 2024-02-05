@@ -7,7 +7,7 @@ export default function Security() {
   return (
     <>
       <Head>
-        <title>株式会社KESソリューション - 情報セキュリティ基本方針</title>
+        <title>{process.env.NEXT_PUBLIC_COMPANY_NAME} - 情報セキュリティ基本方針</title>
       </Head>
       <MainContainer>
         <PageSection>

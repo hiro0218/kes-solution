@@ -11,8 +11,8 @@ export default function Document() {
         <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#da532c" />
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="theme-color" content="#ffffff" />
-        <meta property="og:title" content="株式会社KESソリューション" />
-        <meta property="og:site_name" content="株式会社KESソリューション" />
+        <meta property="og:title" content={process.env.NEXT_PUBLIC_COMPANY_NAME} />
+        <meta property="og:site_name" content={process.env.NEXT_PUBLIC_COMPANY_NAME} />
         <meta property="og:url" content="" />
         <meta property="og:description" content="" />
         <meta property="og:type" content="website" />

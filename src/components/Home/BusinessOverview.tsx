@@ -1,6 +1,7 @@
 import { Section } from '@/components/Layout';
 import styled from '@emotion/styled';
 import { Heading } from './Heading';
+import { gray } from '@radix-ui/colors';
 
 export const BusinessOverview = () => {
   return (
@@ -24,7 +25,11 @@ export const BusinessOverview = () => {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="business-2.svg" width="240" height="180" alt="" />
           </figure>
-          <BusinessCardHeading>技術支援、ソフトウェア開発</BusinessCardHeading>
+          <BusinessCardHeading>
+            技術支援、
+            <wbr />
+            ソフトウェア開発
+          </BusinessCardHeading>
           <p>
             設計常駐や一括での受託など、ご希望に沿った形式で承ります。
             <br />
@@ -36,7 +41,11 @@ export const BusinessOverview = () => {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="business-3.svg" width="240" height="180" alt="" />
           </figure>
-          <BusinessCardHeading>ネットワーク構築、サーバ設定</BusinessCardHeading>
+          <BusinessCardHeading>
+            ネットワーク構築、
+            <wbr />
+            サーバ設定
+          </BusinessCardHeading>
           <p>
             ネットワークを元にサーバシステムの構築をご提供いたします。
             <br />
@@ -44,6 +53,7 @@ export const BusinessOverview = () => {
           </p>
         </BusinessCard>
       </BusinessContainer>
+
       <UseTechnology>
         <h3>利用技術</h3>
         <p>案件で利用した技術の事例の一部です。</p>
@@ -82,12 +92,18 @@ const BusinessCard = styled.div`
   display: grid;
   grid-template-rows: subgrid;
   grid-row: span 3;
+  border-radius: 0.85rem;
+  padding: 1rem 1.5rem;
 
   @media screen and (max-width: 767px) {
     display: block;
 
     & + & {
       margin-top: 1rem;
+    }
+
+    p {
+      text-align: center;
     }
   }
 
@@ -105,7 +121,8 @@ const BusinessCardHeading = styled.h3`
   margin-top: 1rem;
   font-size: 1.2rem;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.6;
+  letter-spacing: 1px;
   text-align: center;
 `;
 
@@ -119,25 +136,29 @@ const UseTechnology = styled.div`
   p {
     margin-top: 0.5rem;
     font-size: 1rem;
+    line-height: 1.8;
   }
 
   h4 {
     margin-top: 1rem;
+    font-weight: 500;
+    color: ${gray.gray12};
   }
 
   ul {
     display: flex;
     margin-top: 0.5rem;
+
+    > * + * {
+      margin-left: 0.5rem;
+    }
   }
 
   li {
     padding: 0.25em 0.5em;
-    line-height: 1.25;
-    background-color: #eee;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    background-color: ${gray.gray3};
     border-radius: 0.25em;
-
-    & + li {
-      margin-left: 0.5rem;
-    }
   }
 `;
