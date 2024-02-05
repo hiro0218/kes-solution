@@ -25,7 +25,11 @@ export default function Message() {
             私たちのソフトウェア開発技術が、お客様のビジネスをより良くする一助となれば幸いです。
           </PageParagraph>
           <PageParagraph>今後とも株式会社KESソリューションをどうぞよろしくお願い申し上げます。</PageParagraph>
-          <Signature>代表取締役　菊地 信</Signature>
+          <Signature>
+            代表取締役　菊地 信<br />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/signature-president.png" alt="" height="20" />
+          </Signature>
         </PageSection>
       </MainContainer>
     </>
