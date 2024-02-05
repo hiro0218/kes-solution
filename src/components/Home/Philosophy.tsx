@@ -1,10 +1,11 @@
-import { Section } from '@/components/Layout';
+import { Section as _Section } from '@/components/Layout';
+import styled from '@emotion/styled';
 
 export const Philosophy = () => {
   return (
     <Section id="philosophy">
-      <h2>経営理念</h2>
-      <div>
+      <h2 className="sr-only">経営理念</h2>
+      <PhilosophyText>
         <p>
           明朗、
           <wbr />
@@ -13,7 +14,7 @@ export const Philosophy = () => {
           愛和を
           <wbr />
           基本とし、
-          <wbr />
+          <br />
           お客様に
           <wbr />
           よろこばれる
@@ -28,14 +29,30 @@ export const Philosophy = () => {
           <wbr />
           貢献しよう。
         </p>
-        <div>
-          <h3>社是</h3>
-          <p>
-            無心不敬<small>（人信なくんば敬せず）</small>
-          </p>
-          <p>心配するな工夫せよ</p>
-        </div>
-      </div>
+      </PhilosophyText>
     </Section>
   );
 };
+
+const Section = styled(_Section)`
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 500px;
+`;
+
+const PhilosophyText = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  width: 960px;
+  height: 100%;
+  margin: 0 auto;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    font-size: 1.6rem;
+  }
+`;
